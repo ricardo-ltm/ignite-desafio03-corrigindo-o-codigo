@@ -70,7 +70,7 @@ app.delete("/repositories/:id", (request, response) => {
 app.post("/repositories/:id/like", (request, response) => {
   const { id } = request.params;
 
-  repositoryIndex = repositories.findIndex(
+  const repositoryIndex = repositories.findIndex(
     (repository) => repository.id === id
   );
 
